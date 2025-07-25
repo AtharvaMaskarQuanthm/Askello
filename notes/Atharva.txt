@@ -1,0 +1,4 @@
+1. Setup Github in your local
+2. Project Structure along with pyproject.toml
+
+3. Created a venv

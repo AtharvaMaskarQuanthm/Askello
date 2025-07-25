@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "askello"
+version = "0.1.0"
+description = "AI-based RAG engine for Choice"
+authors = [
+  { name="Your Name", email="atharva.maskar@quanthm.com" }
+]
+
+requires-python = ">=3.9.0"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
