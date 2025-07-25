@@ -4,4 +4,3 @@ askello-venv
 # Egg info in any location (globally)
 **/*.egg-info/
 *.egg-info/
-src/*.egg-info/
