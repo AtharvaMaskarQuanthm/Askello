@@ -2,6 +2,7 @@ from config.faiss import FaissSetup
 from sentence_transformers import SentenceTransformer
 from time import time
 from typing import Dict, List
+from utils.logger import get_logger
 
 import faiss
 import numpy as np
@@ -18,7 +19,12 @@ class FaissRAG:
             - None
         """
 
+        # prepare logger
+        self.logger = get_logger("FaissRAG")
+
         self.model = SentenceTransformer(FaissSetup.model_name)
+        self.logger.info(":Model Loaded Sucessfully")
+
         self.data = data
 
         # Setting up the index
@@ -26,6 +32,8 @@ class FaissRAG:
             model = self.model, 
             data = data
         )
+        self.logger.info(f":FAISS Index setup complete")
+
 
     def search(self, query: str, top_k : int = 3) -> List[str]:
         """
@@ -46,7 +54,7 @@ class FaissRAG:
 
         results = [self.data[i] for _, i in enumerate(I[0])]
 
-        print(f"Time required for FAISS Search: {time() - start_time}")
+        self.logger.info(f"FAISS Search latency: {time() - start_time}s")
 
         return results
 
