@@ -1,4 +1,7 @@
 askello-venv
 
 # This is created by pip install -e .
-*.egg-info/ 
+# Egg info in any location (globally)
+**/*.egg-info/
+*.egg-info/
+src/*.egg-info/
