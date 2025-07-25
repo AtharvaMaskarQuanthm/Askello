@@ -38,11 +38,15 @@ class FaissRAG:
             - results (List) -> List of results. 
         """
 
+        start_time = time()
+
         query_vector = self.model.encode([query], convert_to_numpy=True).astype('float32')
 
-        _, I = self.index(query_vector, top_k)
+        _, I = self.index.search(query_vector, top_k)
 
         results = [self.data[i] for _, i in enumerate(I[0])]
+
+        print(f"Time required for FAISS Search: {time() - start_time}")
 
         return results
 
