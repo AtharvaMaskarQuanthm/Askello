@@ -2,7 +2,8 @@
     - add .
     - commit 
     - push your local branch to remote branch 
-    - git push origin feature/atharva/thread-id-lookup
+    - git push origin feature/atharva/thread-id-
+    - git push --set-upstream origin my-new-branch
     - git checkout main (switch to main)
     - update local main from remote - git pull origin main
     - merge the branch - git merge feature/add-api
