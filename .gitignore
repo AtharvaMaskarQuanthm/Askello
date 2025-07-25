@@ -1,5 +1,7 @@
 askello-venv
 
+.env
+
 # This is created by pip install -e .
 # Egg info in any location (globally
 
@@ -11,7 +13,6 @@ __pycache__/
 # C extensions
 
 .env
-
 
 *.so
 
