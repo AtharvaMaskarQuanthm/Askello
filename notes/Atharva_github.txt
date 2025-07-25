@@ -1,0 +1,9 @@
+1. How to merge a branch into the main branch
+    - add .
+    - commit 
+    - push your local branch to remote branch 
+    - git push origin feature/atharva/thread-id-lookup
+    - git checkout main (switch to main)
+    - update local main from remote - git pull origin main
+    - merge the branch - git merge feature/add-api
+    - push merged branch to main - git push origin main
