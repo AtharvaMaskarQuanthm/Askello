@@ -9,3 +9,6 @@
     - merge the branch - git merge feature/add-api
     - push merged branch to main - git push origin main
     - git push origin feature/atharva/thread-id-lookup
+
+
+- git pull origin main
