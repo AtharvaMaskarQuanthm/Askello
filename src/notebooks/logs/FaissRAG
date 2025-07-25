@@ -1,0 +1,3 @@
+[2025-07-25 16:00:06] [INFO] FaissRAG: :Model Loaded Sucessfully
+[2025-07-25 16:00:35] [INFO] FaissRAG: :FAISS Index setup complete
+[2025-07-25 16:00:35] [INFO] FaissRAG: FAISS Search latency: 0.031000137329101562s
